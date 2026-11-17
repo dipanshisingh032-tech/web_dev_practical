@@ -1,3 +1,4 @@
+HEAD
 # Web Development Practicals (P1–P13)
 
 Beginner-friendly practical files for Terminal, Git, GitHub, HTML, CSS, Flexbox and Grid.
@@ -14,3 +15,6 @@ Beginner-friendly practical files for Terminal, Git, GitHub, HTML, CSS, Flexbox 
 
 ## Note
 The Git commands are examples. Replace `your-username` and `your-email@example.com` with your own GitHub details before using them. These files have not been pushed to GitHub.
+
+# web_dev_practical
+ 956ea559d216355c92878dc28bc6bfd5473d8484
