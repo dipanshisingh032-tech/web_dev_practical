@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar and Flexbox Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #243b55;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            background-color: #e8eef7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <strong style="color: white;">My Portfolio</strong>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+        </div>
+    </nav>
+
+    <h1>My Projects</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Project 1</h2>
+            <p>A simple HTML page.</p>
+        </div>
+        <div class="card">
+            <h2>Project 2</h2>
+            <p>A page styled with CSS.</p>
+        </div>
+        <div class="card">
+            <h2>Project 3</h2>
+            <p>A responsive layout.</p>
+        </div>
+    </div>
+</body>
+</html>

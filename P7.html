@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Tokens and Typography</title>
+    <style>
+        :root {
+            --main-color: #2457a6;
+            --text-color: #333333;
+            --light-color: #f2f5fa;
+            --space: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            margin: 0;
+            padding: var(--space);
+        }
+
+        h1 {
+            color: var(--main-color);
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: white;
+            padding: var(--space);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>This page uses CSS variables for colours and spacing. It also uses a simple typography system with different heading sizes.</p>
+    </div>
+</body>
+</html>

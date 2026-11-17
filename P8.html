@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Navbar and Card Overlay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #243b55;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            margin: 40px auto;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .content {
+            padding: 20px;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </nav>
+
+    <div class="card">
+        <img src="https://placehold.co/600x350" alt="Sample project">
+        <div class="overlay">My Project</div>
+    </div>
+
+    <div class="content">
+        <h2>Scroll the page</h2>
+        <p>The navigation bar stays at the top while you scroll.</p>
+    </div>
+</body>
+</html>

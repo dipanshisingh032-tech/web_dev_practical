@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout with CSS Grid</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid black;
+            margin-bottom: 20px;
+        }
+
+        .newspaper {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+
+        article {
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .newspaper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE DAILY NEWS</h1>
+        <p>Simple Newspaper Layout</p>
+    </header>
+
+    <main class="newspaper">
+        <article>
+            <h2>Local News</h2>
+            <p>Students took part in a campus cleanliness drive today.</p>
+        </article>
+
+        <article>
+            <h2>Main Headline</h2>
+            <p>A new technology event was organised at the college. Students presented projects and learned about web development, design and programming.</p>
+        </article>
+
+        <article>
+            <h2>Sports</h2>
+            <p>The college team won its inter-college match.</p>
+        </article>
+    </main>
+</body>
+</html>

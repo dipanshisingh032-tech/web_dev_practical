@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox vs Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .example {
+            margin-bottom: 30px;
+        }
+
+        .flex-layout {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            background-color: #dce8f7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flex-layout .item {
+            flex: 1 1 120px;
+        }
+
+        @media (max-width: 600px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choosing Between Flexbox and Grid</h1>
+
+    <section class="example">
+        <h2>Flexbox Example</h2>
+        <p>Flexbox is useful when items are arranged mainly in one direction.</p>
+        <div class="flex-layout">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Contact</div>
+        </div>
+    </section>
+
+    <section class="example">
+        <h2>Grid Example</h2>
+        <p>Grid is useful when we need rows and columns together.</p>
+        <div class="grid-layout">
+            <div class="item">Project 1</div>
+            <div class="item">Project 2</div>
+            <div class="item">Project 3</div>
+        </div>
+    </section>
+</body>
+</html>
